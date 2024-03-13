@@ -1,0 +1,143 @@
+.bod{ 
+  margin: 0 !important;
+  padding: 0 !important; 
+  background: #34495e;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "montserrat",sans-serif;
+}
+
+.loading{
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #3efc6e;
+  position: relative;
+  animation: a1 2s linear infinite;
+}
+
+.loading::before,.loading::after{
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.loading::before{
+  border-top: 10px solid #fff;
+  transform: rotate(120deg);
+}
+
+.loading::after{
+  border-top: 10px solid ;
+  transform: rotate(240deg);
+}
+
+.loading span{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color:#3efc6e;
+  text-align: center;
+  line-height: 200px;
+  animation: a2 2s linear infinite;
+}
+
+@keyframes a1 {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  to{
+    transform: rotate(-360deg);
+  }
+} 
+
+.card
+{margin:5px!important;
+border: 2px solid green !important;
+}
+
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: lightgreen;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* .card:hover
+{
+border-radius: 25px !important;
+border: 3px solid Lightgreen !important;
+cursor:pointer !important;
+} */
+
+.img-fluid, .modal-dialog.cascading-modal.modal-avatar 
+.modal-header, .video-fluid
+{
+border: 2px solid green !important;
+}
+
+.img-thumbnail 
+{
+border: 2px solid green !important;
+}
+
+/* Gallery page */
+.container1
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  text-align-last: center;
+  text-justify: auto;
+}
+
+.image
+{
+  width: 280px;
+  height: 280px;
+}
+
+@media screen and (min-width:280px){
+  
+  }
+  
+}
+.image:hover
+{
+  /* width: 290px;
+  border-radius: 25px !important;
+  border: 2px solid Lightgreen !important;
+  cursor:pointer !important; */
+}
+
+.h1
+{
+  font-size: 48px;
+  text-align-last: center;
+  font-weight: 900;
+}
